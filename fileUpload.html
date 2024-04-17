@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Upload a File</title>
+        <style>
+          body{
+            font-family: Arial, sans-serif;
+            background: #FFF2E1;
+            position: relative;
+          }
+          .theURLsec {
+            text-align: center;
+            font-size: 20px;
+            border: 5px solid #A79277;
+            margin: auto;
+            width: 50%;
+            position: relative;
+            top: 130px;
+            
+          }
+          li span {
+            position: relative;
+            left: -100px;
+          }
+          .header-bar {
+            padding: 10px 0;
+            background-color: #A79277;
+            text-align: center;
+            color: #EAD8C0;
+          }
+          .nav-bar {
+            background-color: #A79277;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+          }
+          .nav-bar a {
+            color: #EAD8C0;
+            text-decoration: none;
+            padding: 5px;
+          }
+          .nav-bar a:hover {
+            background-color: #EAD8C0;
+            color: #A79277;
+          }
+	.button-56 {
+   display: inline-block;
+                outline: 0;
+                border: none;
+                cursor: pointer;
+                padding: 0 24px;
+                border-radius: 50px;
+                min-width: 100px;
+                height: 30px;
+                font-size: 18px;
+                background-color: #A79277;
+                font-weight: 500;
+                color: #EAD8C0;
+}
+	
+        </style>
+
+    </head>
+    <body>
+      <div class="header-bar">
+        <h1>Lip to Speech Synthesis</h1>
+      </div>
+        <br>
+        <div class="nav-bar">
+          <a href="/homee">Home</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+      </div>
+      
+        <!-- <h1>Upload new File</h1>
+        <form method=post enctype=multipart/form-data>
+		
+          <input type=file name=file>
+          <input type=submit value=Upload>
+        </form> -->
+        
+              <div class="theURLsec">
+                  <h3 style="color: #A79277;">
+                      Upload a video file
+                  </h3>
+                  <form method=post enctype=multipart/form-data>
+                    <input type=file name=file  style="height: 30px;">
+                    <input type=submit value=Upload class="button-56">
+                  </form>
+                  <span style="color: #A79277;font-weight: bold;">Did you say: {{ transcription }}</span><br>
+              </div>
+            <br>
+         
+              <div class="theURLsec" >
+                <span style="color: #A79277;font-weight: bold;">CMR INSTITUTE OF TECHNOLOGY </span><br>
+
+    
+              </div>
+
+
+
+        <script>
+          function redirectTo(){
+
+            let redirectURL = document.getElementById('url').value;
+            location.replace(redirectURL)            
+          }
+	 </script>
+    </body>
+</html>
